@@ -1,0 +1,25 @@
+{% extends 'base/main.html' %}
+{% block content %}
+
+<div style="padding: 10px;" class="header-bar">
+    <h1>Register</h1>
+    <a style="color: aliceblue; padding: 10px 0; line-height: 0;" href="{% url 'login' %}">&#8592;Go Back</a>
+</div>
+
+<form style="padding: 10px;" action="" method="POST">
+    {% csrf_token %}
+
+    {% for i in form %}
+    <p>
+        {{ i.label }}:
+        <br>
+        {{ i }}
+    </p>
+
+    {% endfor %}
+    
+    <input class="button" type="submit" value="Register">
+</form>
+
+<p style="padding: 10px;">Already have an account ? <a href="{% url 'login' %}">Login</a></p>
+{% endblock %}
