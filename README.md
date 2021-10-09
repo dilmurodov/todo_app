@@ -1,9 +1,9 @@
 # TODO - APP
 TODO - APP in Django
 
-# Yuklash uchun zaruriy komadalar
+# Yuklash uchun zaruriy komandalar
 
-Allavlambor virtual environtment ochib olamiz
+Avvalambor virtual environtment ochib olamiz
 
 1) cd todo_app/todo
 2) pip install django==3.1
